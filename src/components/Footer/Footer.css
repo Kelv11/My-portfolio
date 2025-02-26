@@ -1,0 +1,39 @@
+.footer {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.footer-copyright {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-social {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-social a {
+  color: white;
+  transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social a:hover {
+  opacity: 0.8;
+}

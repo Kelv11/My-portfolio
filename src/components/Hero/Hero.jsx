@@ -1,10 +1,11 @@
 import React from "react";
 import "./Hero.css";
 import me from "../../assets/pug.png";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div id="home" className="hero">
       <img src={me} alt="" />
       <h1>
         <span>I'm Kev,</span> A software developer based in Nairobi, Kenya
@@ -18,7 +19,12 @@ const Hero = () => {
         database management
       </p>
       <div className="hero-action">
-        <div className="hero-connect">Connect</div>
+        <div className="hero-connect">
+          {" "}
+          <AnchorLink className="anchor-link" offset={50} href="#contact">
+            Connect{" "}
+          </AnchorLink>{" "}
+        </div>
         <div className="hero-resume">My Resume</div>
       </div>
     </div>

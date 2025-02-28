@@ -45,10 +45,14 @@
   border-radius: 50px;
   border: 2px solid #fff;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
 }
 .hero-connect:hover {
   border: 2px solid white;
 }
 .hero-resume:hover {
   border-color: #b415ff;
+  transform: scale(1.05);
 }

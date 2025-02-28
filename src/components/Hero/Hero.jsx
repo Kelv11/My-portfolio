@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import me from "../../assets/pug.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import myresume from "../../assets/myresume.pdf";
 
 const Hero = () => {
   return (
@@ -25,7 +26,9 @@ const Hero = () => {
             Connect{" "}
           </AnchorLink>{" "}
         </div>
-        <div className="hero-resume">My Resume</div>
+        <a href={myresume} download="Kev_Resume.pdf" className="hero-resume">
+          My Resume
+        </a>
       </div>
     </div>
   );

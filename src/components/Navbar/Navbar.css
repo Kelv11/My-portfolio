@@ -2,12 +2,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 170px;
+  padding: 20px 170px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  z-index: 1000;
+  background-color: #000;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+.navbar-scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
 .navbar img {
   width: 90px;
   height: 90px;
 }
+
 .nav-menu {
   display: flex;
   align-items: center;
@@ -15,6 +30,7 @@
   gap: 60px;
   font-size: 20px;
 }
+
 .nav-connect {
   padding: 20px 20px;
   border-radius: 50px;
@@ -23,22 +39,115 @@
   cursor: pointer;
   transition: 0.5s;
 }
+
 .nav-connect:hover {
   transform: scale(1.05);
 }
+
 .nav-menu li {
   display: flex;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  position: relative;
 }
-.nav-menu li img {
-  display: flex;
-  margin: auto;
-  width: 70px;
-  height: 50px;
+
+.nav-menu li.active p {
+  color: #da7c25;
+  font-weight: bold;
 }
+
+.nav-menu li.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+}
+
 .anchor-link {
   text-decoration: none;
   color: white;
+}
+
+body {
+  padding-top: 55px;
+  margin: 0;
+}
+
+.nav-mob-close {
+  display: none;
+}
+.nav-mob-open {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 8px 15px;
+    align-items: center;
+  }
+
+  /* Logo styling */
+  .navbar img:first-child {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .nav-connect {
+    display: none;
+  }
+
+  .nav-mob-open {
+    display: block;
+    position: fixed;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1;
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+
+  .nav-mob-close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: auto;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+
+  /* Side menu */
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-start;
+
+    top: 0;
+    gap: 20px;
+    background-color: #1f0016;
+    width: 280px;
+    height: 100%;
+    z-index: 10;
+    transition: right 0.3s ease-in-out;
+    right: -280px;
+    padding-top: 60px;
+  }
+
+  .nav-menu li {
+    font-size: 22px;
+    padding-left: 40px;
+    width: 100%;
+  }
+  .nav-mob-open,
+  .nav-mob-close {
+    max-width: 40px;
+    max-height: 40px;
+  }
 }

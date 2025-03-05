@@ -95,6 +95,7 @@
   transform: scale(1.1);
   transition: 0.3s;
 }
+
 .form-result {
   margin-top: 15px;
   padding: 10px;
@@ -130,4 +131,59 @@
 
 .form-result {
   animation: fadeIn 0.5s ease;
+}
+
+/* Tablet and Mobile Breakpoints */
+@media (max-width: 1024px) {
+  .contact {
+    margin: 80px 50px;
+    gap: 50px;
+  }
+
+  .contact-section {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 40px 20px;
+    gap: 40px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-title h1 {
+    font-size: 48px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .contact-left h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .contact-left,
+  .contact-details-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-right {
+    max-width: 100%;
+  }
+
+  .contact-submit {
+    width: 100%;
+    padding: 15px 40px;
+    font-size: 16px;
+  }
+
+  .contact-title img {
+    display: none;
+  }
 }

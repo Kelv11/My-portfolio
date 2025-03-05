@@ -83,7 +83,6 @@ body {
 .nav-mob-open {
   display: none;
 }
-
 @media (max-width: 768px) {
   .navbar {
     padding: 8px 15px;

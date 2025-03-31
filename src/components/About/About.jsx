@@ -14,20 +14,22 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              Motivated Information Technology professional with a comprehensive
-              foundation in software development, network administration, and
-              database management. Skilled in web development technologies
-              including HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS.
-              Proficient in programming languages Java and JavaScript, with
-              hands-on experience in MySQL database management
+              As a recent Information Technology graduate from KCA University, I
+              am passionate about leveraging my technical skills to create
+              innovative software solutions. My academic foundation has equipped
+              me with comprehensive knowledge in web development, programming,
+              and database management, with hands-on experience in developing
+              responsive websites and practical applications using technologies
+              like JavaScript, Java, HTML, CSS, and MySQL.
             </p>
             <p>
-              Motivated Information Technology professional with a comprehensive
-              foundation in software development, network administration, and
-              database management. Skilled in web development technologies
-              including HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS.
-              Proficient in programming languages Java and JavaScript, with
-              hands-on experience in MySQL database management
+              My professional journey is driven by a commitment to continuous
+              learning and technological growth. I bring strong problem-solving
+              skills, adaptability, and an eagerness to contribute to
+              cutting-edge projects. Beyond coding, I find balance and
+              inspiration through cycling, hiking, and adventure rides, which
+              fuel my creativity and provide a refreshing perspective on
+              challenges both in technology and in life.
             </p>
           </div>
           <div className="about-skills">

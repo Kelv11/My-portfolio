@@ -20,12 +20,16 @@ const MyWork = () => {
               className="work-link"
             >
               <img src={work.w_img} alt={work.w_name} />
+              <div className="work-overlay">
+                <h3>{work.w_name}</h3>
+                <p>{work.description}</p>
+              </div>
             </a>
           );
         })}
       </div>
       <a
-        href="https://github.com/Kelv11?tab=repositories"
+        href="https://github.com/yourusername"
         target="_blank"
         rel="noopener noreferrer"
         className="mywork-showmore-link"
